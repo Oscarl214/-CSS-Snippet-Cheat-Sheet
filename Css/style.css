@@ -1,0 +1,63 @@
+:root {
+  --backdrop: linear-gradient(#e66465, #9198e5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  border: black;
+  border-style: groove;
+  border-radius: 5px;
+  position: relative;
+  margin-top: -20px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 575px);
+  grid-template-rows: 400px 450px;
+  grid-gap: 40px;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.grid-item {
+  border: black;
+  border-style: dashed;
+  border-top: 0;
+}
+
+.backdrop {
+  background: var(--backdrop);
+  border-radius: 5px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; */
+}
